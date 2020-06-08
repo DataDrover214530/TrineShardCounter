@@ -1,0 +1,65 @@
+get number of bag slots
+itterate bag slots to check if it is a soulshard
+return total
+
+function HelloWorld() 
+  print("OK, World!"); 
+	  for bag = 0, 4, 1 do
+		slots = GetContainerNumSlots(bag)
+		slots = slots - 1
+			for theSlot = 0, slots, 1 do
+			print (GetContainerItemID(bag, theSlot))
+			end
+	end
+end
+
+function HelloWorld() 
+print (GetContainerItemInfo(0,1))
+reutns 134075 1 false 1 false false [Soul Shard] false true 6265
+  print("Nooob, World!") 
+  for bag = 0, 4, 1 do
+  slots = (GetContainerNumSlots(bag))
+  print (slots)
+  end
+end
+
+function HelloWorld() 
+itemID = GetContainerItemID(0,1)
+print(itemID)
+itemName = GetItemInfo(itemID)
+print(itemName)
+
+if (itemName == "Soul Shard") then
+print ("its a soul shard")
+end
+  print("xxxzzz, World!") 
+  for bag = 0, 4, 1 do
+  slots = (GetContainerNumSlots(bag))
+  print (slots)
+	for bags 0, 3, 1 do
+	
+	
+	function HelloWorld() 
+local shards = 0
+print("Checking shards...") 
+  for bag = 0, 4, 1 do
+  --print("Checking bag "..bag)
+	slots = (GetContainerNumSlots(bag))
+	--print (slots)
+		for checkSlot = 1, slots, 1 do
+			itemID = GetContainerItemID(bag,checkSlot)
+				if (itemID) then
+				--print(itemID)	
+				itemName = GetItemInfo(itemID)
+				--print(itemName)
+					if (itemName == "Soul Shard") then
+						--print ("its a soul shard")
+						shards = shards + 1
+					end
+				end --endif on item ID
+			end
+	end
+print ("You have "..shards.." Soul Shards in your bags")
+end
+	
+	

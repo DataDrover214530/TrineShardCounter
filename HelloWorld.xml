@@ -1,0 +1,45 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+         ..\..\FrameXML\UI.xsd">
+  <Script File="HelloWorld.lua"/>
+  <Frame name="HelloWorldFrame" parent="UIParent" hidden="false">
+  <Size x="234" y="300"/>
+  <Anchors>
+    <Anchor point="CENTER"/>
+  </Anchors>
+  <Layers>
+    <Layer level="BACKGROUND">
+      <Texture setAllPoints="true">
+        <Color r="1" g="1" b="1" a="0.5"/>
+      </Texture>
+    </Layer>
+  </Layers>
+  <Frames>
+    <Button name="$parentButton" text="Click me!">
+      <Size x="120" y="21"/>
+      <Anchors>
+        <Anchor point="CENTER"/>
+      </Anchors>
+      <Layers>
+        <Layer level="BACKGROUND">
+          <Texture setAllPoints="true">
+            <Color r="0" g="0" b="1" a="1"/>
+          </Texture>
+        </Layer>
+      </Layers>
+      <NormalFont style="GameFontNormal"/>
+      <PushedFont style="GameFontNormal"/>
+      <HighlightFont style="GameFontHighlight"/>
+	    <Scripts>
+			<OnClick>self:SetText("You clicked me");</OnClick>
+		</Scripts>
+    </Button>
+  </Frames>
+  <Scripts>
+    <OnLoad>
+      HelloWorld();
+    </OnLoad>
+  </Scripts>
+</Frame>
+</Ui>

@@ -1,0 +1,7 @@
+## Interface: 11302
+## Title: Hello, World!
+## Notes: My first AddOn
+## Author: Fitzadam
+## Version: 0.1
+HelloWorld.lua
+HelloWorld.xml
